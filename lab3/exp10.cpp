@@ -6,33 +6,27 @@ class Point
     int x, y;
 
 public:
-    inline void input();
+    inline void input(int a, int b);
     inline void show();
 };
 
-inline void Point::input()
+inline void Point::input(int a, int b)
 {
-    cout << "Enter x and y: ";
-    cin >> x >> y;
+    x = a;
+    y = b;
 }
 
 inline void Point::show()
 {
-    cout << "x = " << x << ", y = " << y << endl;
+    cout << "x: " << x << " y: " << y << endl;
 }
 
 int main()
 {
-    Point p1, p2;
+    Point p1;
 
-    p1.input();
-    p2.input();
-
-    cout << "\nPoint 1: ";
+    p1.input(10, 20);
     p1.show();
-
-    cout << "Point 2: ";
-    p2.show();
 
     return 0;
 }
