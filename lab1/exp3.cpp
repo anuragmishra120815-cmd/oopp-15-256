@@ -3,18 +3,18 @@ using namespace std;
 
 class Point
 {
-    int x, y;
+    int a, b;
 
 public:
     void input()
     {
-        cout << "Enter x and y: ";
-        cin >> x >> y;
+        cout << "Enter a and b: ";
+        cin >> a >> b;
     }
 
     void show()
     {
-        cout << "x = " << x << ", y = " << y << endl;
+        cout << "a = " << a << ", b = " << b << endl;
     }
 };
 
